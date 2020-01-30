@@ -8,6 +8,16 @@
 *.sln.docstates
 *.~u
 
+_Boot
+_Libraries
+_CompileInfo
+*.suo
+*~
+*.tpy
+*.bak
+*.~u
+*.swp
+
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 

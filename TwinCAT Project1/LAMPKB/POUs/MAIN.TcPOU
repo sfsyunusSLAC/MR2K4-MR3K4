@@ -1,13 +1,66 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1">
-  <POU Name="MAIN" Id="{d48d093c-1952-488d-b52e-7b1f490c5b20}">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.3">
+  <POU Name="MAIN" Id="{d48d093c-1952-488d-b52e-7b1f490c5b20}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
+	{attribute 'TcLinkTo' := '.bLimitForwardEnable:=TIIB[M2K4 X]^STM Status^Status^Digital input 1;
+                              .bLimitBackwardEnable:=TIIB[M2K4 X]^STM Status^Status^Digital input 2'}
+	M1 : DUT_MotionStage := (nCommand:=ENUM_EpicsMotorCmd.EPICS_MOTOR_MOVE_ABS);
+	fbMotionStageM1 : FB_MotionStage;
+	{attribute 'TcLinkTo' := '.bLimitForwardEnable:=TIIB[M2K4 Y]^STM Status^Status^Digital input 1;
+                              .bLimitBackwardEnable:=TIIB[M2K4 Y]^STM Status^Status^Digital input 2'}
+	M2 : DUT_MotionStage := (nCommand:=ENUM_EpicsMotorCmd.EPICS_MOTOR_MOVE_ABS);
+	fbMotionStageM2 : FB_MotionStage;
+	{attribute 'TcLinkTo' := '.bLimitForwardEnable:=TIIB[M2K4 rY]^STM Status^Status^Digital input 1;
+                              .bLimitBackwardEnable:=TIIB[M2K4 rY]^STM Status^Status^Digital input 2'}
+	M3 : DUT_MotionStage := (nCommand:=ENUM_EpicsMotorCmd.EPICS_MOTOR_MOVE_ABS);
+	fbMotionStageM3 : FB_MotionStage;
+	
+	{attribute 'TcLinkTo' := '.bLimitForwardEnable:=TIIB[M3K4 X]^STM Status^Status^Digital input 1;
+                              .bLimitBackwardEnable:=TIIB[M3K4 X]^STM Status^Status^Digital input 2'}
+	M4 : DUT_MotionStage := (nCommand:=ENUM_EpicsMotorCmd.EPICS_MOTOR_MOVE_ABS);
+	fbMotionStageM4 : FB_MotionStage;
+	{attribute 'TcLinkTo' := '.bLimitForwardEnable:=TIIB[M3K4 Y]^STM Status^Status^Digital input 1;
+                              .bLimitBackwardEnable:=TIIB[M3K4 Y]^STM Status^Status^Digital input 2'}
+	M5 : DUT_MotionStage := (nCommand:=ENUM_EpicsMotorCmd.EPICS_MOTOR_MOVE_ABS);
+	fbMotionStageM5 : FB_MotionStage;
+	{attribute 'TcLinkTo' := '.bLimitForwardEnable:=TIIB[M3K4 rX]^STM Status^Status^Digital input 1;
+                              .bLimitBackwardEnable:=TIIB[M3K4 rX]^STM Status^Status^Digital input 2'}
+	M6 : DUT_MotionStage := (nCommand:=ENUM_EpicsMotorCmd.EPICS_MOTOR_MOVE_ABS);
+	fbMotionStageM6 : FB_MotionStage;
+	
 END_VAR
-]]>
-    </Declaration>
+]]></Declaration>
     <Implementation>
-      <ST><![CDATA[]]></ST>
+      <ST><![CDATA[
+M1.nEnableMode;
+M2.nEnableMode;
+M3.nEnableMode;
+
+M4.nEnableMode;
+M5.nEnableMode;
+M6.nEnableMode;
+
+
+fbMotionStageM1(stMotionStage:=M1);
+fbMotionStageM2(stMotionStage:=M2);
+fbMotionStageM3(stMotionStage:=M3);
+
+fbMotionStageM4(stMotionStage:=M4);
+fbMotionStageM5(stMotionStage:=M5);
+fbMotionStageM6(stMotionStage:=M6);]]></ST>
     </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="41" Count="0" />
+      <LineId Id="44" Count="2" />
+      <LineId Id="48" Count="0" />
+      <LineId Id="47" Count="0" />
+      <LineId Id="49" Count="1" />
+      <LineId Id="42" Count="1" />
+      <LineId Id="2" Count="0" />
+      <LineId Id="35" Count="1" />
+      <LineId Id="40" Count="0" />
+      <LineId Id="37" Count="2" />
+    </LineIds>
   </POU>
 </TcPlcObject>
