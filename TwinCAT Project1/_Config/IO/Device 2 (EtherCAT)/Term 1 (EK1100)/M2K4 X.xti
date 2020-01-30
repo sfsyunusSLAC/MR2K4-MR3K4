@@ -87,6 +87,7 @@
 			<MBoxUserCmdData>020003000a0000000f00000003000000000000000000000000000000000000002010800102000000f00a4d6178696d616c2063757272656e7400</MBoxUserCmdData>
 			<MBoxUserCmdData>020003000a0000000f00000003000000000000000000000000000000000000002010800202000000f00a526564756365642063757272656e7400</MBoxUserCmdData>
 			<MBoxUserCmdData>020003000a0000000f00000003000000000000000000000000000000000000002010800302000000c05d4e6f6d696e616c20766f6c7461676500</MBoxUserCmdData>
+			<MBoxUserCmdData>020003000a0000000f0000000300000000000000000000000000000000000000201080060200000090014d6f746f722066756c6c737465707300</MBoxUserCmdData>
 			<Pdo Name="ENC Status compact" Index="#x1a00" Flags="#x0010" SyncMan="3">
 				<ExcludePdo>#x1a01</ExcludePdo>
 				<Entry Name="Status__">
@@ -204,10 +205,10 @@
 				<Entry Name="Status__">
 					<Type GUID="{18071995-0000-0000-0000-002000000003}">ARRAY [0..2] OF BIT</Type>
 				</Entry>
-				<Entry Name="Status__Digital input 1" Index="#x6010" Sub="#x0c">
+				<Entry Name="Status__Digital input 1" Index="#x6010" Sub="#x0c" Flags="#x00008020">
 					<Type>BIT</Type>
 				</Entry>
-				<Entry Name="Status__Digital input 2" Index="#x6010" Sub="#x0d">
+				<Entry Name="Status__Digital input 2" Index="#x6010" Sub="#x0d" Flags="#x00008020">
 					<Type>BIT</Type>
 				</Entry>
 				<Entry Name="Status__Sync error" Index="#x6010" Sub="#x0e">
