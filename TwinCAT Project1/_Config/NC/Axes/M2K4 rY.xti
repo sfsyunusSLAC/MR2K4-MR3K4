@@ -1342,13 +1342,13 @@ External Setpoint Generation:
 	<Axis Id="3" CreateSymbols="true" AxisType="1" AxisFolder="M2K4">
 		<Name>__FILENAME__</Name>
 		<AxisPara>
+			<General UnitName="urad"/>
 			<Dynamic AccelerationMaximum="200" DecelerationMaximum="200" Acceleration="200" Deceleration="200" DelayTime="0.008"/>
-			<Velo Maximum="140.8450704"/>
+			<Velo Maximum="140.845"/>
 			<OtherSettings AllowMotionCmdToSlave="true"/>
-			<ParameterChanged>260</ParameterChanged>
 		</AxisPara>
 		<Encoder Name="Enc" EncType="29">
-			<EncPara ScaleFactorNumerator="1e-06" MaxCount="#xffffffff">
+			<EncPara ScaleFactorNumerator="0.005348" Offset="-194502.025" MaxCount="#xffffffff">
 				<Inc RefSoftSyncMask="#x0000ffff"/>
 			</EncPara>
 			<Vars VarGrpType="1">
@@ -1388,7 +1388,7 @@ External Setpoint Generation:
 		</Encoder>
 		<Drive Name="Drive" DrvType="24">
 			<DrvPara>
-				<Analog VeloReferenz="140.8450704" TorqueSetpointScale="10" ScaleFactorActTorque="0.1"/>
+				<Analog VeloReferenz="166.6665" TorqueSetpointScale="10" ScaleFactorActTorque="0.1"/>
 				<TimeComp TaskDelayCycles="1"/>
 			</DrvPara>
 			<Vars VarGrpType="1">
@@ -1462,7 +1462,7 @@ External Setpoint Generation:
 		</Drive>
 		<Controller Name="Ctrl" CtrType="1">
 			<CtrPara PriorControlFactor="1">
-				<PosDiffControl Range="0.001"/>
+				<PosDiffControl Range="40"/>
 				<Observer BandWidth="20"/>
 			</CtrPara>
 		</Controller>

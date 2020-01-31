@@ -954,7 +954,7 @@ External Setpoint Generation:
 		</Motion>
 		<Plc>
 			<Project GUID="{1ACDA02B-1D47-4D2A-8D68-66267E1ED014}" Name="LAMPKB" PrjFilePath="LAMPKB\LAMPKB.plcproj" TmcFilePath="LAMPKB\LAMPKB.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="LAMPKB\LAMPKB.tmc">
 					<Name>LAMPKB Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Vars VarGrpType="1">
@@ -963,6 +963,14 @@ External Setpoint Generation:
 							<Name>LCLS_General.DefaultGlobals.stSys.I_EcatMaster1</Name>
 							<Comment><![CDATA[ AMS Net ID used for FB_EcatDiag, among others ]]></Comment>
 							<Type GUID="{18071995-0000-0000-0000-000000000041}">AMSNETID</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.PhaseA</Name>
+							<Type>UINT</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.PhaseB</Name>
+							<Type>UINT</Type>
 						</Var>
 						<Var>
 							<Name>MAIN.M1.Axis.NcToPlc</Name>
@@ -1132,6 +1140,150 @@ External Setpoint Generation:
 							<Name>MAIN.fbMotionStageM6.fbDriveVirtual.MasterAxis.NcToPlc</Name>
 							<Type GUID="{72F5AAAA-16DF-4ED3-8367-F6C8C3ADAE99}" Namespace="MC">NCTOPLC_AXIS_REF</Type>
 						</Var>
+						<Var>
+							<Name>MAIN.fbM2Stats.Axis.Axis.NcToPlc</Name>
+							<Type GUID="{72F5AAAA-16DF-4ED3-8367-F6C8C3ADAE99}" Namespace="MC">NCTOPLC_AXIS_REF</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.fbM2Stats.Axis.bLimitForwardEnable</Name>
+							<Comment><![CDATA[ NC Forward Limit Switch: TRUE if ok to move]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.fbM2Stats.Axis.bLimitBackwardEnable</Name>
+							<Comment><![CDATA[ NC Backward Limit Switch: TRUE if ok to move]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.fbM2Stats.Axis.bHome</Name>
+							<Comment><![CDATA[ NO Home Switch: TRUE if at home]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.fbM2Stats.Axis.bHardwareEnable</Name>
+							<Comment><![CDATA[ NC STO Input: TRUE if ok to move]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.fbM3Stats.Axis.Axis.NcToPlc</Name>
+							<Type GUID="{72F5AAAA-16DF-4ED3-8367-F6C8C3ADAE99}" Namespace="MC">NCTOPLC_AXIS_REF</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.fbM3Stats.Axis.bLimitForwardEnable</Name>
+							<Comment><![CDATA[ NC Forward Limit Switch: TRUE if ok to move]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.fbM3Stats.Axis.bLimitBackwardEnable</Name>
+							<Comment><![CDATA[ NC Backward Limit Switch: TRUE if ok to move]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.fbM3Stats.Axis.bHome</Name>
+							<Comment><![CDATA[ NO Home Switch: TRUE if at home]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.fbM3Stats.Axis.bHardwareEnable</Name>
+							<Comment><![CDATA[ NC STO Input: TRUE if ok to move]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.fbM1Stats.Axis.Axis.NcToPlc</Name>
+							<Type GUID="{72F5AAAA-16DF-4ED3-8367-F6C8C3ADAE99}" Namespace="MC">NCTOPLC_AXIS_REF</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.fbM1Stats.Axis.bLimitForwardEnable</Name>
+							<Comment><![CDATA[ NC Forward Limit Switch: TRUE if ok to move]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.fbM1Stats.Axis.bLimitBackwardEnable</Name>
+							<Comment><![CDATA[ NC Backward Limit Switch: TRUE if ok to move]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.fbM1Stats.Axis.bHome</Name>
+							<Comment><![CDATA[ NO Home Switch: TRUE if at home]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.fbM1Stats.Axis.bHardwareEnable</Name>
+							<Comment><![CDATA[ NC STO Input: TRUE if ok to move]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.fbM4Stats.Axis.Axis.NcToPlc</Name>
+							<Type GUID="{72F5AAAA-16DF-4ED3-8367-F6C8C3ADAE99}" Namespace="MC">NCTOPLC_AXIS_REF</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.fbM4Stats.Axis.bLimitForwardEnable</Name>
+							<Comment><![CDATA[ NC Forward Limit Switch: TRUE if ok to move]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.fbM4Stats.Axis.bLimitBackwardEnable</Name>
+							<Comment><![CDATA[ NC Backward Limit Switch: TRUE if ok to move]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.fbM4Stats.Axis.bHome</Name>
+							<Comment><![CDATA[ NO Home Switch: TRUE if at home]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.fbM4Stats.Axis.bHardwareEnable</Name>
+							<Comment><![CDATA[ NC STO Input: TRUE if ok to move]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.fbM5Stats.Axis.Axis.NcToPlc</Name>
+							<Type GUID="{72F5AAAA-16DF-4ED3-8367-F6C8C3ADAE99}" Namespace="MC">NCTOPLC_AXIS_REF</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.fbM5Stats.Axis.bLimitForwardEnable</Name>
+							<Comment><![CDATA[ NC Forward Limit Switch: TRUE if ok to move]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.fbM5Stats.Axis.bLimitBackwardEnable</Name>
+							<Comment><![CDATA[ NC Backward Limit Switch: TRUE if ok to move]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.fbM5Stats.Axis.bHome</Name>
+							<Comment><![CDATA[ NO Home Switch: TRUE if at home]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.fbM5Stats.Axis.bHardwareEnable</Name>
+							<Comment><![CDATA[ NC STO Input: TRUE if ok to move]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.fbM6Stats.Axis.Axis.NcToPlc</Name>
+							<Type GUID="{72F5AAAA-16DF-4ED3-8367-F6C8C3ADAE99}" Namespace="MC">NCTOPLC_AXIS_REF</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.fbM6Stats.Axis.bLimitForwardEnable</Name>
+							<Comment><![CDATA[ NC Forward Limit Switch: TRUE if ok to move]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.fbM6Stats.Axis.bLimitBackwardEnable</Name>
+							<Comment><![CDATA[ NC Backward Limit Switch: TRUE if ok to move]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.fbM6Stats.Axis.bHome</Name>
+							<Comment><![CDATA[ NO Home Switch: TRUE if at home]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.fbM6Stats.Axis.bHardwareEnable</Name>
+							<Comment><![CDATA[ NC STO Input: TRUE if ok to move]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
 					</Vars>
 					<Vars VarGrpType="2">
 						<Name>PlcTask Outputs</Name>
@@ -1213,6 +1365,60 @@ External Setpoint Generation:
 							<Name>MAIN.fbMotionStageM6.fbDriveVirtual.MasterAxis.PlcToNc</Name>
 							<Type GUID="{63A84524-72E3-41C8-BEAB-4CCE44690A13}" Namespace="MC">PLCTONC_AXIS_REF</Type>
 						</Var>
+						<Var>
+							<Name>MAIN.fbM2Stats.Axis.Axis.PlcToNc</Name>
+							<Type GUID="{63A84524-72E3-41C8-BEAB-4CCE44690A13}" Namespace="MC">PLCTONC_AXIS_REF</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.fbM2Stats.Axis.bBrakeRelease</Name>
+							<Comment><![CDATA[ NC Brake Output: TRUE to release brake]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.fbM3Stats.Axis.Axis.PlcToNc</Name>
+							<Type GUID="{63A84524-72E3-41C8-BEAB-4CCE44690A13}" Namespace="MC">PLCTONC_AXIS_REF</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.fbM3Stats.Axis.bBrakeRelease</Name>
+							<Comment><![CDATA[ NC Brake Output: TRUE to release brake]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.fbM1Stats.Axis.Axis.PlcToNc</Name>
+							<Type GUID="{63A84524-72E3-41C8-BEAB-4CCE44690A13}" Namespace="MC">PLCTONC_AXIS_REF</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.fbM1Stats.Axis.bBrakeRelease</Name>
+							<Comment><![CDATA[ NC Brake Output: TRUE to release brake]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.fbM4Stats.Axis.Axis.PlcToNc</Name>
+							<Type GUID="{63A84524-72E3-41C8-BEAB-4CCE44690A13}" Namespace="MC">PLCTONC_AXIS_REF</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.fbM4Stats.Axis.bBrakeRelease</Name>
+							<Comment><![CDATA[ NC Brake Output: TRUE to release brake]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.fbM5Stats.Axis.Axis.PlcToNc</Name>
+							<Type GUID="{63A84524-72E3-41C8-BEAB-4CCE44690A13}" Namespace="MC">PLCTONC_AXIS_REF</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.fbM5Stats.Axis.bBrakeRelease</Name>
+							<Comment><![CDATA[ NC Brake Output: TRUE to release brake]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.fbM6Stats.Axis.Axis.PlcToNc</Name>
+							<Type GUID="{63A84524-72E3-41C8-BEAB-4CCE44690A13}" Namespace="MC">PLCTONC_AXIS_REF</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.fbM6Stats.Axis.bBrakeRelease</Name>
+							<Comment><![CDATA[ NC Brake Output: TRUE to release brake]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
 					</Vars>
 					<TaskPouOids>
 						<TaskPouOid Prio="20" OTCID="#x08502001"/>
@@ -1223,11 +1429,6 @@ External Setpoint Generation:
 		<Io>
 			<Device File="Device 2 (EtherCAT).xti" Id="2"/>
 		</Io>
-		<SymbolWatch>
-			<Variable>TIID^Device 2 (EtherCAT)^Term 1 (EK1100)^Term 2 (EL5042)^FB Inputs Channel 1^Status</Variable>
-			<Variable>TIID^Device 2 (EtherCAT)^Term 1 (EK1100)^Term 5 (EL9221-5000)^OCP Inputs^Status</Variable>
-			<Variable>TIID^Device 2 (EtherCAT)^Term 1 (EK1100)^M2K4 X^STM Status^Status</Variable>
-		</SymbolWatch>
 	</Project>
 	<Mappings>
 		<MappingInfo Identifier="{00000000-0010-0304-3000-040310000403}" Id="#x02030010"/>
@@ -1245,6 +1446,8 @@ External Setpoint Generation:
 			<OwnerB Name="TIID^Device 2 (EtherCAT)^Term 1 (EK1100)^M2K4 rY">
 				<Link VarA="PlcTask Inputs^MAIN.M3.bLimitBackwardEnable" VarB="STM Status^Status^Digital input 2" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^MAIN.M3.bLimitForwardEnable" VarB="STM Status^Status^Digital input 1" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^MAIN.PhaseA" VarB="STM Synchron info data^Info data 1" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^MAIN.PhaseB" VarB="STM Synchron info data^Info data 2" AutoLink="true"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 2 (EtherCAT)^Term 1 (EK1100)^M3K4 X">
 				<Link VarA="PlcTask Inputs^MAIN.M4.bLimitBackwardEnable" VarB="STM Status^Status^Digital input 2" AutoLink="true"/>

@@ -5,17 +5,17 @@
 		<AxisIoType>MDP-703</AxisIoType>
 		<IoItem>
 			<PathName>TIID^Device 2 (EtherCAT)^Term 1 (EK1100)^Term 2 (EL5042)</PathName>
-			<Channel>0</Channel>
+			<Channel>1</Channel>
 		</IoItem>
 		<Folder>M2K4</Folder>
 		<AxisParam>
 			<Unit>mm</Unit>
 			<Dynamic>
-				<Acceleration>100</Acceleration>
-				<Deceleration>100</Deceleration>
-				<Jerk>2250</Jerk>
-				<AccelerationMaximum>100</AccelerationMaximum>
-				<DecelerationMaximum>100</DecelerationMaximum>
+				<Acceleration>10</Acceleration>
+				<Deceleration>10</Deceleration>
+				<Jerk>15</Jerk>
+				<AccelerationMaximum>10</AccelerationMaximum>
+				<DecelerationMaximum>10</DecelerationMaximum>
 				<DelayTime>0.008</DelayTime>
 				<SetpointGeneratorType>1</SetpointGeneratorType>
 				<OverrideType>3</OverrideType>
@@ -33,7 +33,7 @@
 				<SlowManual>100</SlowManual>
 				<FastManual>600</FastManual>
 				<Fast>2000</Fast>
-				<Maximum>20</Maximum>
+				<Maximum>1.25</Maximum>
 			</Velo>
 			<PositionAreaControl>
 				<Enable>true</Enable>
@@ -131,7 +131,7 @@
 		<Drive>
 			<DrvType>24</DrvType>
 			<DrvParam>
-				<Inverse>true</Inverse>
+				<Inverse>false</Inverse>
 				<DrvMode>1</DrvMode>
 				<MinOutputLimit>-1</MinOutputLimit>
 				<MaxOutputLimit>1</MaxOutputLimit>
@@ -141,7 +141,7 @@
 				<InputFilterTimeActTorque>0</InputFilterTimeActTorque>
 				<InputFilterTimeActTorqueDerivative>0</InputFilterTimeActTorqueDerivative>
 				<Analog>
-					<VeloReferenz>20</VeloReferenz>
+					<VeloReferenz>1.25</VeloReferenz>
 					<OutputReferenz>1</OutputReferenz>
 					<VeloOffset>0</VeloOffset>
 					<VeloScale>1</VeloScale>
@@ -188,7 +188,7 @@
 				<PriorControlFactor>1</PriorControlFactor>
 				<PosDiffControl>
 					<Enable>true</Enable>
-					<Range>0.1</Range>
+					<Range>0.001</Range>
 					<Time>0.02</Time>
 				</PosDiffControl>
 				<VeloDiffControl>
@@ -214,7 +214,7 @@
 					<VeloDOutputLimit>0.1</VeloDOutputLimit>
 					<AccKa>0</AccKa>
 					<CtrlOutputLimit>0.5</CtrlOutputLimit>
-					<DeadBandPosition>0.001</DeadBandPosition>
+					<DeadBandPosition>0</DeadBandPosition>
 					<DeadBandVelocity>0</DeadBandVelocity>
 					<PosDiffCoupleKcp>0</PosDiffCoupleKcp>
 					<VeloPT2FilterTime>0</VeloPT2FilterTime>

@@ -1345,10 +1345,9 @@ External Setpoint Generation:
 			<Dynamic AccelerationMaximum="100" DecelerationMaximum="100" Acceleration="100" Deceleration="100" DelayTime="0.008"/>
 			<Velo Maximum="20"/>
 			<OtherSettings AllowMotionCmdToSlave="true"/>
-			<ParameterChanged>260</ParameterChanged>
 		</AxisPara>
 		<Encoder Name="Enc" EncType="29">
-			<EncPara ScaleFactorNumerator="1e-06" MaxCount="#xffffffff">
+			<EncPara ScaleFactorNumerator="5e-06" Offset="-30.6825" MaxCount="#xffffffff">
 				<Inc RefSoftSyncMask="#x0000ffff"/>
 			</EncPara>
 			<Vars VarGrpType="1">
@@ -1387,7 +1386,7 @@ External Setpoint Generation:
 			</Vars>
 		</Encoder>
 		<Drive Name="Drive" DrvType="24">
-			<DrvPara>
+			<DrvPara Inverse="true">
 				<Analog VeloReferenz="20" TorqueSetpointScale="10" ScaleFactorActTorque="0.1"/>
 				<TimeComp TaskDelayCycles="1"/>
 			</DrvPara>
@@ -1462,7 +1461,8 @@ External Setpoint Generation:
 		</Drive>
 		<Controller Name="Ctrl" CtrType="1">
 			<CtrPara PriorControlFactor="1">
-				<PosDiffControl Range="0.001"/>
+				<PosDiffControl Range="0.1"/>
+				<PID DeadBandPosition="0.001"/>
 				<Observer BandWidth="20"/>
 			</CtrPara>
 		</Controller>

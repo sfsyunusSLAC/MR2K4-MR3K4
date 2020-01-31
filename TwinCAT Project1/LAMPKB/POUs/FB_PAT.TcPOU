@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.3">
+  <POU Name="FB_PAT" Id="{fb424df5-5e45-4edf-9d1e-76cfbe8c2757}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_PAT
+VAR_INPUT
+	Velocity : LREAL;
+END_VAR
+VAR_OUTPUT
+	FwLimPos : LREAL; // Positive limit position
+	BwLimPos : LREAL; // 
+END_VAR
+VAR_IN_OUT
+	Stage : DUT_MotionStage;
+END_VAR
+VAR
+	fbMicroStepCount : FB_MicroStepCountTest;
+	
+	fbMove: MC_Jog;
+	tFwLim: F_TRIG;
+	tBwLim: F_TRIG;
+	Dir: INT;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[
+
+// Relative move until limit, reverse and repeat, record positions, do math and spit out travel range
+
+tFwLim(CLK:=Stage.bLimitForwardEnable);
+tBwLim(CLK:=Stage.bLimitBackwardEnable);
+
+WHILE Stage.bLimitBackwardEnable AND Stage.bLimitForwardEnable DO
+	IF tFwLim.Q OR tBwLim.Q THEN
+		IF (Dir = 1 AND tBwLim.Q) OR (Dir = -1 AND tFwLim.Q) THEN
+			// Error, limits backwards
+			EXIT;
+		END_IF
+		
+		IF tFwLim.Q THEN
+			FwLimPos := Stage.Axis.NcToPlc.ActPos;
+		ELSIF tBwLim.Q THEN
+			BwLimPos := Stage.Axis.NcToPlc.ActPos;
+		END_IF
+		
+		
+	END_IF
+	
+	
+	
+END_WHILE
+
+// Discover minimum step size in one direction
+
+// Attempt minimum step size in alternating direction
+
+fbMove(Axis:=Stage.Axis, Velocity:=Velocity, Mode:=E_JogMode.MC_JOGMODE_CONTINOUS);]]></ST>
+    </Implementation>
+    <LineIds Name="FB_PAT">
+      <LineId Id="17" Count="0" />
+      <LineId Id="13" Count="0" />
+      <LineId Id="9" Count="0" />
+      <LineId Id="26" Count="2" />
+      <LineId Id="22" Count="2" />
+      <LineId Id="35" Count="0" />
+      <LineId Id="40" Count="0" />
+      <LineId Id="46" Count="0" />
+      <LineId Id="41" Count="0" />
+      <LineId Id="48" Count="0" />
+      <LineId Id="31" Count="0" />
+      <LineId Id="36" Count="0" />
+      <LineId Id="38" Count="1" />
+      <LineId Id="37" Count="0" />
+      <LineId Id="50" Count="1" />
+      <LineId Id="32" Count="0" />
+      <LineId Id="52" Count="2" />
+      <LineId Id="25" Count="0" />
+      <LineId Id="19" Count="0" />
+      <LineId Id="18" Count="0" />
+      <LineId Id="21" Count="0" />
+      <LineId Id="20" Count="0" />
+      <LineId Id="56" Count="0" />
+      <LineId Id="55" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
