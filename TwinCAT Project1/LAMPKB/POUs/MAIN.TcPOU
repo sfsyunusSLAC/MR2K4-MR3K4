@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.3">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
   <POU Name="MAIN" Id="{d48d093c-1952-488d-b52e-7b1f490c5b20}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
@@ -87,8 +87,10 @@ VAR
 	fbM5Stats : FB_MotionStageStats;
 	fbM6Stats : FB_MotionStageStats;
 	
+	bSTOEnable1 AT %I* : BOOL;
+	bSTOEnable2 AT %I* : BOOL;
 	
-END_VAR
+	END_VAR
 ]]></Declaration>
     <Implementation>
       <ST><![CDATA[
@@ -100,13 +102,13 @@ M4.nEnableMode;
 M5.nEnableMode;
 M6.nEnableMode;
 
-M1.bHardwareEnable;
-M2.bHardwareEnable;
-M3.bHardwareEnable;
+M1.bHardwareEnable := bSTOEnable1 AND bSTOEnable2;
+M2.bHardwareEnable := bSTOEnable1 AND bSTOEnable2;
+M3.bHardwareEnable := bSTOEnable1 AND bSTOEnable2;
 
-M4.bHardwareEnable;
-M5.bHardwareEnable;
-M6.bHardwareEnable;
+M4.bHardwareEnable := bSTOEnable1 AND bSTOEnable2;
+M5.bHardwareEnable := bSTOEnable1 AND bSTOEnable2;
+M6.bHardwareEnable := bSTOEnable1 AND bSTOEnable2;
 
 
 fbMotionStageM1(stMotionStage:=M1);
