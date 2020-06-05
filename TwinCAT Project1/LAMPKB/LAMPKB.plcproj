@@ -33,7 +33,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DUTs" />
-    <Folder Include="POUs\GVLs" />
+    <Folder Include="GVLs" />
     <Folder Include="VISUs" />
     <Folder Include="POUs" />
   </ItemGroup>
