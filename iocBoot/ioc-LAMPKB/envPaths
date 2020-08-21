@@ -1,0 +1,2 @@
+epicsEnvSet("IOC_TOP", "/c/repos/MR2K4-MR3K4/iocBoot/ioc-LAMPKB")
+epicsEnvSet("IOC_DATA", "C:\Users\pcds/iocData")

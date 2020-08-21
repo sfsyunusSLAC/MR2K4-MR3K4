@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4022.32">
-	<Project ProjectGUID="{AED707E3-64DD-400B-B5E1-B785A6AB5CCE}" Target64Bit="true" ShowHideConfigurations="#x106">
+	<Project ProjectGUID="{AED707E3-64DD-400B-B5E1-B785A6AB5CCE}" TargetNetId="172.21.148.45.1.1" Target64Bit="true" ShowHideConfigurations="#x106">
 		<System>
 			<Tasks>
 				<Task Id="5" Priority="20" CycleTime="100000" AmsPort="350" AdtTasks="true">
@@ -10,7 +10,7 @@
 		</System>
 		<Motion>
 			<NC>
-				<SafTask Priority="4" CycleTime="20000" AmsPort="501" IoAtBegin="true" AmsNetId="172.21.148.45.1.1">
+				<SafTask Priority="4" CycleTime="20000" AmsPort="501" IoAtBegin="true" AmsNetId="198.129.222.82.1.1">
 					<Name>NC-Task 1 SAF</Name>
 					<Vars VarGrpType="1" InsertType="1">
 						<Name>Inputs</Name>
