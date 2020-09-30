@@ -28,6 +28,22 @@ VAR
                               .bLimitBackwardEnable:=TIIB[M3K4 rX]^STM Status^Status^Digital input 2'}
 	M6 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.DURING_MOTION);
 	fbMotionStageM6 : FB_MotionStage;
+		{attribute 'TcLinkTo' := '.bLimitForwardEnable:=TIIB[M2K4 BEND US]^STM Status^Status^Digital input 1;
+								  .bLimitBackwardEnable:=TIIB[M2K4 BEND US]^STM Status^Status^Digital input 2'}
+	M7 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.DURING_MOTION);
+	fbMotionStageM7 : FB_MotionStage;
+			{attribute 'TcLinkTo' := '.bLimitForwardEnable:=TIIB[M2K4 BEND DS]^STM Status^Status^Digital input 1;
+                              		  .bLimitBackwardEnable:=TIIB[M2K4 BEND DS]^STM Status^Status^Digital input 2'}
+	M8 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.DURING_MOTION);
+	fbMotionStageM8 : FB_MotionStage;
+			{attribute 'TcLinkTo' := '.bLimitForwardEnable:=TIIB[M3K4 BEND US]^STM Status^Status^Digital input 1;
+                              		  .bLimitBackwardEnable:=TIIB[M3K4 BEND US]^STM Status^Status^Digital input 2'}
+	M9 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.DURING_MOTION);
+	fbMotionStageM9 : FB_MotionStage;
+			{attribute 'TcLinkTo' := '.bLimitForwardEnable:=TIIB[M3K4 BEND DS]^STM Status^Status^Digital input 1;
+                             		  .bLimitBackwardEnable:=TIIB[M3K4 BEND DS]^STM Status^Status^Digital input 2'}
+	M10 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.DURING_MOTION);
+	fbMotionStageM10 : FB_MotionStage;
 	
 	{attribute 'TcLinkTo' := 'TIIB[M2K4 rY]^STM Synchron info data^Info data 1;'}
 	PhaseA AT %I* : UINT;
@@ -35,29 +51,27 @@ VAR
 	{attribute 'TcLinkTo' := 'TIIB[M2K4 rY]^STM Synchron info data^Info data 2;'}
 	PhaseB AT %I* : UINT;
 	
-	fbStepSizeTest : FB_MicroStepCountTest := (
+	fbStepSizeTest_M2K4X : FB_MicroStepCountTest := (
 		fStepSize := 0.00015625,
 		nSteps := 1000,
 		fMicroStep := 0.00015625,
 		fVelocity := 1,
 		tSettleTime := T#1S);
 		
-	fbStepSizeTest_Y : FB_MicroStepCountTest := (
+	fbStepSizeTest_M2K4Y : FB_MicroStepCountTest := (
 		fStepSize := 0.0097656,
 		nSteps := 1000,
 		fMicroStep := 0.0097656,
 		fVelocity := 0.5,
 		tSettleTime := T#1S);
 		
-	fbStepSizeTest_rY : FB_MicroStepCountTest := (
+	fbStepSizeTest_M2K4rY : FB_MicroStepCountTest := (
 		fStepSize := 0.0013021,
 		nSteps := 1000,
 		fMicroStep := 0.0013021,
 		fVelocity := 10,
 		tSettleTime := T#1S);
 
-
-		
 	fbStepSizeTest_M3K4X : FB_MicroStepCountTest := (
 		fStepSize := 0.00015625,
 		nSteps := 1000,
@@ -72,7 +86,7 @@ VAR
 		fVelocity := 0.5,
 		tSettleTime := T#1S);
 		
-	fbStepSizeTest_M3K4r : FB_MicroStepCountTest := (
+	fbStepSizeTest_M3K4rX : FB_MicroStepCountTest := (
 		fStepSize := 0.0013021,
 		nSteps := 1000,
 		fMicroStep := 0.0013021,
@@ -87,20 +101,47 @@ VAR
 	fbM5Stats : FB_MotionStageStats;
 	fbM6Stats : FB_MotionStageStats;
 	
+	fbM7Stats : FB_MotionStageStats;
+	fbM8Stats : FB_MotionStageStats;
+
+	fbM9Stats : FB_MotionStageStats;	
+	fbM10Stats : FB_MotionStageStats;
+	
 	bSTOEnable1 AT %I* : BOOL;
 	bSTOEnable2 AT %I* : BOOL;
 	
-	END_VAR
+		ALWAYS: ENUM_StageEnableMode;
+END_VAR
 ]]></Declaration>
     <Implementation>
       <ST><![CDATA[
-M1.nEnableMode;
-M2.nEnableMode;
-M3.nEnableMode;
+M1.nEnableMode := ALWAYS;
+M2.nEnableMode := ALWAYS;
+M3.nEnableMode := ALWAYS;
 
-M4.nEnableMode;
-M5.nEnableMode;
-M6.nEnableMode;
+M4.nEnableMode := ALWAYS;
+M5.nEnableMode := ALWAYS;
+M6.nEnableMode := ALWAYS;
+
+M7.nEnableMode := ALWAYS;
+M8.nEnableMode := ALWAYS;
+
+M9.nEnableMode := ALWAYS;
+M10.nEnableMode := ALWAYS;
+
+M1.bPowerSelf := TRUE;
+M2.bPowerSelf := TRUE;
+M3.bPowerSelf := TRUE;
+
+M4.bPowerSelf := TRUE;
+M5.bPowerSelf := TRUE;
+M6.bPowerSelf := TRUE;
+
+M7.bPowerSelf := TRUE;
+M8.bPowerSelf := TRUE;
+
+M9.bPowerSelf := TRUE;
+M10.bPowerSelf := TRUE;
 
 M1.bHardwareEnable := bSTOEnable1 AND bSTOEnable2;
 M2.bHardwareEnable := bSTOEnable1 AND bSTOEnable2;
@@ -109,6 +150,12 @@ M3.bHardwareEnable := bSTOEnable1 AND bSTOEnable2;
 M4.bHardwareEnable := bSTOEnable1 AND bSTOEnable2;
 M5.bHardwareEnable := bSTOEnable1 AND bSTOEnable2;
 M6.bHardwareEnable := bSTOEnable1 AND bSTOEnable2;
+
+M7.bHardwareEnable := bSTOEnable1 AND bSTOEnable2;
+M8.bHardwareEnable := bSTOEnable1 AND bSTOEnable2;
+
+M9.bHardwareEnable := bSTOEnable1 AND bSTOEnable2;
+M10.bHardwareEnable := bSTOEnable1 AND bSTOEnable2;
 
 
 fbMotionStageM1(stMotionStage:=M1);
@@ -119,6 +166,12 @@ fbMotionStageM4(stMotionStage:=M4);
 fbMotionStageM5(stMotionStage:=M5);
 fbMotionStageM6(stMotionStage:=M6);
 
+fbMotionStageM7(stMotionStage:=M7);
+fbMotionStageM8(stMotionStage:=M8);
+
+fbMotionStageM9(stMotionStage:=M9);
+fbMotionStageM10(stMotionStage:=M10);
+
 fbM1Stats(Axis:=M1);
 fbM2Stats(Axis:=M2);
 fbM3Stats(Axis:=M3);
@@ -127,43 +180,19 @@ fbM4Stats(Axis:=M4);
 fbM5Stats(Axis:=M5);
 fbM6Stats(Axis:=M6);
 
-fbStepSizeTest(Axis:=M1.Axis);
-fbStepSizeTest_Y(Axis:=M2.Axis);
-fbStepSizeTest_rY(Axis:=M3.Axis);
+fbM7Stats(Axis:=M7);
+fbM8Stats(Axis:=M8);
+
+fbM9Stats(Axis:=M9);
+fbM10Stats(Axis:=M10);
+
+fbStepSizeTest_M2K4X(Axis:=M1.Axis);
+fbStepSizeTest_M2K4Y(Axis:=M2.Axis);
+fbStepSizeTest_M2K4rY(Axis:=M3.Axis);
 
 fbStepSizeTest_M3K4X(Axis:=M4.Axis);
 fbStepSizeTest_M3K4Y(Axis:=M5.Axis);
-fbStepSizeTest_M3K4r(Axis:=M6.Axis);]]></ST>
+fbStepSizeTest_M3K4rX(Axis:=M6.Axis);]]></ST>
     </Implementation>
-    <LineIds Name="MAIN">
-      <LineId Id="41" Count="0" />
-      <LineId Id="44" Count="2" />
-      <LineId Id="48" Count="0" />
-      <LineId Id="47" Count="0" />
-      <LineId Id="49" Count="1" />
-      <LineId Id="52" Count="0" />
-      <LineId Id="51" Count="0" />
-      <LineId Id="53" Count="1" />
-      <LineId Id="56" Count="0" />
-      <LineId Id="55" Count="0" />
-      <LineId Id="57" Count="1" />
-      <LineId Id="42" Count="1" />
-      <LineId Id="2" Count="0" />
-      <LineId Id="35" Count="1" />
-      <LineId Id="40" Count="0" />
-      <LineId Id="37" Count="2" />
-      <LineId Id="104" Count="0" />
-      <LineId Id="97" Count="0" />
-      <LineId Id="112" Count="1" />
-      <LineId Id="115" Count="0" />
-      <LineId Id="114" Count="0" />
-      <LineId Id="116" Count="2" />
-      <LineId Id="94" Count="0" />
-      <LineId Id="148" Count="0" />
-      <LineId Id="131" Count="0" />
-      <LineId Id="171" Count="0" />
-      <LineId Id="170" Count="0" />
-      <LineId Id="172" Count="1" />
-    </LineIds>
   </POU>
 </TcPlcObject>
