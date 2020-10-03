@@ -137,11 +137,11 @@ M4.bPowerSelf := TRUE;
 M5.bPowerSelf := TRUE;
 M6.bPowerSelf := TRUE;
 
-M7.bPowerSelf := TRUE;
-M8.bPowerSelf := TRUE;
+M7.bPowerSelf := FALSE;
+M8.bPowerSelf := FALSE;
 
-M9.bPowerSelf := TRUE;
-M10.bPowerSelf := TRUE;
+M9.bPowerSelf := FALSE;
+M10.bPowerSelf := FALSE;
 
 M1.bHardwareEnable := bSTOEnable1 AND bSTOEnable2;
 M2.bHardwareEnable := bSTOEnable1 AND bSTOEnable2;

@@ -5,15 +5,15 @@
   <IsWizardTemplate>false</IsWizardTemplate>
   <LayoutString>&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;Layout&gt;
-  &lt;Window Guid="6115b99d-e328-41c6-ac48-4301d3da4177" LastFocused="132459722433130325" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="eb8d551f-2cc7-4025-b2af-4a164df487ad" DocumentIndexInWindowGroup="5" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
-  &lt;Window Guid="efccb6c3-f0cd-4245-b3eb-c6af9ff8cfe2" LastFocused="132459722920786912" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="eb8d551f-2cc7-4025-b2af-4a164df487ad" DocumentIndexInWindowGroup="3" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
-  &lt;Window Guid="4e8e82a1-c233-4020-b541-e99ade9a8fd1" LastFocused="132459722913846782" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="eb8d551f-2cc7-4025-b2af-4a164df487ad" DocumentIndexInWindowGroup="2" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
-  &lt;Window Guid="516d61af-96ba-42bc-8300-4e8d955effff" LastFocused="132459725147146780" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="eb8d551f-2cc7-4025-b2af-4a164df487ad" DocumentIndexInWindowGroup="4" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
-  &lt;Window Guid="b89a962b-7119-4601-838c-fcc1d355dae6" LastFocused="132459722886426926" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="eb8d551f-2cc7-4025-b2af-4a164df487ad" DocumentIndexInWindowGroup="1" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
-  &lt;Window Guid="b1560a06-9992-4c8c-9f35-e7602e22de09" LastFocused="132459725172496882" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="eb8d551f-2cc7-4025-b2af-4a164df487ad" DocumentIndexInWindowGroup="0" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
+  &lt;Window Guid="6115b99d-e328-41c6-ac48-4301d3da4177" LastFocused="132462348277879019" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="eb8d551f-2cc7-4025-b2af-4a164df487ad" DocumentIndexInWindowGroup="5" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
+  &lt;Window Guid="efccb6c3-f0cd-4245-b3eb-c6af9ff8cfe2" LastFocused="132461491703791948" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="eb8d551f-2cc7-4025-b2af-4a164df487ad" DocumentIndexInWindowGroup="3" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
+  &lt;Window Guid="4e8e82a1-c233-4020-b541-e99ade9a8fd1" LastFocused="132461491709211469" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="eb8d551f-2cc7-4025-b2af-4a164df487ad" DocumentIndexInWindowGroup="2" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
+  &lt;Window Guid="516d61af-96ba-42bc-8300-4e8d955effff" LastFocused="132461492017021821" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="eb8d551f-2cc7-4025-b2af-4a164df487ad" DocumentIndexInWindowGroup="4" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
+  &lt;Window Guid="b89a962b-7119-4601-838c-fcc1d355dae6" LastFocused="132462348097010188" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="eb8d551f-2cc7-4025-b2af-4a164df487ad" DocumentIndexInWindowGroup="1" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
+  &lt;Window Guid="b1560a06-9992-4c8c-9f35-e7602e22de09" LastFocused="132461551414388098" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="eb8d551f-2cc7-4025-b2af-4a164df487ad" DocumentIndexInWindowGroup="0" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
   &lt;DocumentContainer Dock="5"&gt;
     &lt;SplitLayoutSystem WorkingSize="250, 400" SplitMode="0"&gt;
-      &lt;ControlLayoutSystem WorkingSize="250, 400" Guid="eb8d551f-2cc7-4025-b2af-4a164df487ad" Collapsed="0" SelectedControl="b1560a06-9992-4c8c-9f35-e7602e22de09"&gt;
+      &lt;ControlLayoutSystem WorkingSize="250, 400" Guid="eb8d551f-2cc7-4025-b2af-4a164df487ad" Collapsed="0" SelectedControl="6115b99d-e328-41c6-ac48-4301d3da4177"&gt;
         &lt;Controls&gt;
           &lt;Control Guid="b1560a06-9992-4c8c-9f35-e7602e22de09" /&gt;
           &lt;Control Guid="b89a962b-7119-4601-838c-fcc1d355dae6" /&gt;
@@ -28,7 +28,7 @@
 &lt;/Layout&gt;</LayoutString>
   <Operating>
     <RecordTime>36000000000</RecordTime>
-    <DataFileName>C:\Users\sfsyunus\Documents\LAMP_KB\SAT_Scope</DataFileName>
+    <DataFileName>C:\repos\MR2K4-MR3K4\Scope_data</DataFileName>
     <RunMode>ClientStart</RunMode>
     <StopMode>AutoStop</StopMode>
     <ServerUseFileStore>true</ServerUseFileStore>
@@ -136,7 +136,7 @@
                 <SymbolName>Axes.M2K4 X.ActPos</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>0</FileHandle>
+                <FileHandle>61</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>198.129.222.82.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -361,7 +361,7 @@
                 <SymbolName>Axes.M2K4 X.SetPos</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>0</FileHandle>
+                <FileHandle>62</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>198.129.222.82.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -620,7 +620,7 @@
                 <SymbolName>Axes.M2K4 X.ActVelo</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>0</FileHandle>
+                <FileHandle>63</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>198.129.222.82.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -845,7 +845,7 @@
                 <SymbolName>Axes.M2K4 X.SetVelo</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>0</FileHandle>
+                <FileHandle>64</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>198.129.222.82.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -1104,7 +1104,7 @@
                 <SymbolName>Axes.M2K4 X.PosDiff</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>0</FileHandle>
+                <FileHandle>65</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>198.129.222.82.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -1432,7 +1432,7 @@
                 <SymbolName>Axes.M2K4 rY.SetPos</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>0</FileHandle>
+                <FileHandle>66</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>198.129.222.82.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -1657,7 +1657,7 @@
                 <SymbolName>Axes.M2K4 rY.ActPos</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>0</FileHandle>
+                <FileHandle>67</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>198.129.222.82.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -1916,7 +1916,7 @@
                 <SymbolName>Axes.M2K4 rY.ActVelo</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>0</FileHandle>
+                <FileHandle>68</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>198.129.222.82.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -2141,7 +2141,7 @@
                 <SymbolName>Axes.M2K4 rY.SetVelo</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>0</FileHandle>
+                <FileHandle>69</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>198.129.222.82.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -2400,7 +2400,7 @@
                 <SymbolName>Axes.M2K4 rY.PosDiff</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>0</FileHandle>
+                <FileHandle>70</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>198.129.222.82.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -2728,7 +2728,7 @@
                 <SymbolName>Axes.M3K4 X.ActPos</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>0</FileHandle>
+                <FileHandle>71</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>198.129.222.82.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -2953,7 +2953,7 @@
                 <SymbolName>Axes.M3K4 X.SetPos</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>0</FileHandle>
+                <FileHandle>72</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>198.129.222.82.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -3212,7 +3212,7 @@
                 <SymbolName>Axes.M3K4 X.ActVelo</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>0</FileHandle>
+                <FileHandle>73</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>198.129.222.82.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -3437,7 +3437,7 @@
                 <SymbolName>Axes.M3K4 X.SetVelo</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>0</FileHandle>
+                <FileHandle>74</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>198.129.222.82.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -3696,7 +3696,7 @@
                 <SymbolName>Axes.M3K4 X.PosDiff</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>0</FileHandle>
+                <FileHandle>75</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>198.129.222.82.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -4024,7 +4024,7 @@
                 <SymbolName>Axes.M3K4 Y.ActPos</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>0</FileHandle>
+                <FileHandle>76</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>198.129.222.82.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -4249,7 +4249,7 @@
                 <SymbolName>Axes.M3K4 Y.SetPos</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>0</FileHandle>
+                <FileHandle>77</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>198.129.222.82.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -4508,7 +4508,7 @@
                 <SymbolName>Axes.M3K4 Y.ActVelo</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>0</FileHandle>
+                <FileHandle>78</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>198.129.222.82.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -4733,7 +4733,7 @@
                 <SymbolName>Axes.M3K4 Y.SetVelo</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>0</FileHandle>
+                <FileHandle>79</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>198.129.222.82.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -4992,7 +4992,7 @@
                 <SymbolName>Axes.M3K4 Y.PosDiff</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>0</FileHandle>
+                <FileHandle>80</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>198.129.222.82.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -5320,7 +5320,7 @@
                 <SymbolName>Axes.M3K4 rX.ActPos</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>0</FileHandle>
+                <FileHandle>81</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>198.129.222.82.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -5545,7 +5545,7 @@
                 <SymbolName>Axes.M3K4 rX.SetPos</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>0</FileHandle>
+                <FileHandle>82</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>198.129.222.82.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -5804,7 +5804,7 @@
                 <SymbolName>Axes.M3K4 rX.ActVelo</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>0</FileHandle>
+                <FileHandle>83</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>198.129.222.82.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -6029,7 +6029,7 @@
                 <SymbolName>Axes.M3K4 rX.SetVelo</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>0</FileHandle>
+                <FileHandle>84</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>198.129.222.82.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -6288,7 +6288,7 @@
                 <SymbolName>Axes.M3K4 rX.PosDiff</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>0</FileHandle>
+                <FileHandle>85</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>198.129.222.82.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -6616,7 +6616,7 @@
                 <SymbolName>Axes.M2K4 Y.ActPos</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>0</FileHandle>
+                <FileHandle>86</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>198.129.222.82.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -6841,7 +6841,7 @@
                 <SymbolName>Axes.M2K4 Y.SetPos</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>0</FileHandle>
+                <FileHandle>87</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>198.129.222.82.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -7100,7 +7100,7 @@
                 <SymbolName>Axes.M2K4 Y.ActVelo</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>0</FileHandle>
+                <FileHandle>88</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>198.129.222.82.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -7325,7 +7325,7 @@
                 <SymbolName>Axes.M2K4 Y.SetVelo</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>0</FileHandle>
+                <FileHandle>89</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>198.129.222.82.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -7584,7 +7584,7 @@
                 <SymbolName>Axes.M2K4 Y.PosDiff</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>0</FileHandle>
+                <FileHandle>90</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>198.129.222.82.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -7816,7 +7816,7 @@
         <Precision>6</Precision>
       </CursorModule>
       <Operating>
-        <DisplayWidth>100000000</DisplayWidth>
+        <DisplayWidth>430000000</DisplayWidth>
       </Operating>
       <ChartType>XT</ChartType>
       <SortPriority>-1</SortPriority>
