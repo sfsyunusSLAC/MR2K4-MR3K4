@@ -938,15 +938,10 @@ External Setpoint Generation:
 				</Var>
 				<Var>
 					<Name>MAIN.bSTOEnable1</Name>
+					<Comment>
+						<![CDATA[Emergency Stop]]>
+					</Comment>
 					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.PhaseA</Name>
-					<Type>UINT</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.PhaseB</Name>
-					<Type>UINT</Type>
 				</Var>
 				<Var>
 					<Name>MAIN.bSTOEnable2</Name>

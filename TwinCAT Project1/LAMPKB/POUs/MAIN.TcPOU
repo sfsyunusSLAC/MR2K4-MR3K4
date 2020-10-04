@@ -3,110 +3,103 @@
   <POU Name="MAIN" Id="{d48d093c-1952-488d-b52e-7b1f490c5b20}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
+	//M2K4 X
 	{attribute 'TcLinkTo' := '.bLimitForwardEnable:=TIIB[M2K4 X]^STM Status^Status^Digital input 1;
                               .bLimitBackwardEnable:=TIIB[M2K4 X]^STM Status^Status^Digital input 2'}
-	M1 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.DURING_MOTION);
+	{attribute 'pytmc' := '
+		pv: M2K4:MMS:X
+	'}
+	M1 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.ALWAYS);
 	fbMotionStageM1 : FB_MotionStage;
+	//M2K4 Y
 	{attribute 'TcLinkTo' := '.bLimitForwardEnable:=TIIB[M2K4 Y]^STM Status^Status^Digital input 1;
                               .bLimitBackwardEnable:=TIIB[M2K4 Y]^STM Status^Status^Digital input 2'}
-	M2 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.DURING_MOTION);
+	{attribute 'pytmc' := '
+		pv: M2K4:MMS:Y
+	'}
+	M2 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.ALWAYS);
 	fbMotionStageM2 : FB_MotionStage;
+	//M2K4 rY
 	{attribute 'TcLinkTo' := '.bLimitForwardEnable:=TIIB[M2K4 rY]^STM Status^Status^Digital input 1;
                               .bLimitBackwardEnable:=TIIB[M2K4 rY]^STM Status^Status^Digital input 2'}
-	M3 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.DURING_MOTION);
+	{attribute 'pytmc' := '
+		pv: M2K4:MMS:rY
+	'}
+	M3 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.ALWAYS);
 	fbMotionStageM3 : FB_MotionStage;
-	
+	//M3K4 X
 	{attribute 'TcLinkTo' := '.bLimitForwardEnable:=TIIB[M3K4 X]^STM Status^Status^Digital input 1;
                               .bLimitBackwardEnable:=TIIB[M3K4 X]^STM Status^Status^Digital input 2'}
-	M4 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.DURING_MOTION);
+	{attribute 'pytmc' := '
+		pv: M3K4:MMS:X
+	'}
+	M4 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.ALWAYS);
 	fbMotionStageM4 : FB_MotionStage;
+	//M3K4 Y
 	{attribute 'TcLinkTo' := '.bLimitForwardEnable:=TIIB[M3K4 Y]^STM Status^Status^Digital input 1;
                               .bLimitBackwardEnable:=TIIB[M3K4 Y]^STM Status^Status^Digital input 2'}
-	M5 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.DURING_MOTION);
+	{attribute 'pytmc' := '
+		pv: M3K4:MMS:Y
+	'}
+	M5 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.ALWAYS);
 	fbMotionStageM5 : FB_MotionStage;
+	//M3K4 rX
 	{attribute 'TcLinkTo' := '.bLimitForwardEnable:=TIIB[M3K4 rX]^STM Status^Status^Digital input 1;
                               .bLimitBackwardEnable:=TIIB[M3K4 rX]^STM Status^Status^Digital input 2'}
-	M6 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.DURING_MOTION);
+	{attribute 'pytmc' := '
+		pv: M3K4:MMS:rX
+	'}
+	M6 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.ALWAYS);
 	fbMotionStageM6 : FB_MotionStage;
-		{attribute 'TcLinkTo' := '.bLimitForwardEnable:=TIIB[M2K4 BEND US]^STM Status^Status^Digital input 1;
-								  .bLimitBackwardEnable:=TIIB[M2K4 BEND US]^STM Status^Status^Digital input 2'}
-	M7 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.DURING_MOTION);
+	//M2K4 US BEND
+	{attribute 'TcLinkTo' := '.bLimitForwardEnable:=TIIB[M2K4 BEND US]^STM Status^Status^Digital input 1;
+							  .bLimitBackwardEnable:=TIIB[M2K4 BEND US]^STM Status^Status^Digital input 2'}
+	{attribute 'pytmc' := '
+		pv: M2K4:BEND:MMS:US
+	'}
+	M7 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.ALWAYS);
 	fbMotionStageM7 : FB_MotionStage;
-			{attribute 'TcLinkTo' := '.bLimitForwardEnable:=TIIB[M2K4 BEND DS]^STM Status^Status^Digital input 1;
-                              		  .bLimitBackwardEnable:=TIIB[M2K4 BEND DS]^STM Status^Status^Digital input 2'}
-	M8 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.DURING_MOTION);
+	//M2K4 DS BEND
+	{attribute 'TcLinkTo' := '.bLimitForwardEnable:=TIIB[M2K4 BEND DS]^STM Status^Status^Digital input 1;
+                              .bLimitBackwardEnable:=TIIB[M2K4 BEND DS]^STM Status^Status^Digital input 2'}
+	{attribute 'pytmc' := '
+		pv: M2K4:BEND:MMS:DS
+	'}
+	M8 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.ALWAYS);
 	fbMotionStageM8 : FB_MotionStage;
-			{attribute 'TcLinkTo' := '.bLimitForwardEnable:=TIIB[M3K4 BEND US]^STM Status^Status^Digital input 1;
-                              		  .bLimitBackwardEnable:=TIIB[M3K4 BEND US]^STM Status^Status^Digital input 2'}
-	M9 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.DURING_MOTION);
+	//M3K4 US BEND
+	{attribute 'TcLinkTo' := '.bLimitForwardEnable:=TIIB[M3K4 BEND US]^STM Status^Status^Digital input 1;
+                              .bLimitBackwardEnable:=TIIB[M3K4 BEND US]^STM Status^Status^Digital input 2'}
+	{attribute 'pytmc' := '
+		pv: M3K4:BEND:MMS:US
+	'}
+	M9 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.ALWAYS);
 	fbMotionStageM9 : FB_MotionStage;
-			{attribute 'TcLinkTo' := '.bLimitForwardEnable:=TIIB[M3K4 BEND DS]^STM Status^Status^Digital input 1;
-                             		  .bLimitBackwardEnable:=TIIB[M3K4 BEND DS]^STM Status^Status^Digital input 2'}
-	M10 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.DURING_MOTION);
+	//M3K4 DS BEND
+	{attribute 'TcLinkTo' := '.bLimitForwardEnable:=TIIB[M3K4 BEND DS]^STM Status^Status^Digital input 1;
+                              .bLimitBackwardEnable:=TIIB[M3K4 BEND DS]^STM Status^Status^Digital input 2'}
+	{attribute 'pytmc' := '
+		pv: M3K4:BEND:MMS:DS
+	'}
+	M10 : DUT_MotionStage := (nEnableMode:=ENUM_StageEnableMode.ALWAYS);
 	fbMotionStageM10 : FB_MotionStage;
 	
-	{attribute 'TcLinkTo' := 'TIIB[M2K4 rY]^STM Synchron info data^Info data 1;'}
-	PhaseA AT %I* : UINT;
-	
-	{attribute 'TcLinkTo' := 'TIIB[M2K4 rY]^STM Synchron info data^Info data 2;'}
-	PhaseB AT %I* : UINT;
-	
-	fbStepSizeTest_M2K4X : FB_MicroStepCountTest := (
-		fStepSize := 0.00015625,
-		nSteps := 1000,
-		fMicroStep := 0.00015625,
-		fVelocity := 1,
-		tSettleTime := T#1S);
-		
-	fbStepSizeTest_M2K4Y : FB_MicroStepCountTest := (
-		fStepSize := 0.0097656,
-		nSteps := 1000,
-		fMicroStep := 0.0097656,
-		fVelocity := 0.5,
-		tSettleTime := T#1S);
-		
-	fbStepSizeTest_M2K4rY : FB_MicroStepCountTest := (
-		fStepSize := 0.0013021,
-		nSteps := 1000,
-		fMicroStep := 0.0013021,
-		fVelocity := 10,
-		tSettleTime := T#1S);
-
-	fbStepSizeTest_M3K4X : FB_MicroStepCountTest := (
-		fStepSize := 0.00015625,
-		nSteps := 1000,
-		fMicroStep := 0.00015625,
-		fVelocity := 1,
-		tSettleTime := T#1S);
-		
-	fbStepSizeTest_M3K4Y : FB_MicroStepCountTest := (
-		fStepSize := 0.0097656,
-		nSteps := 1000,
-		fMicroStep := 0.0097656,
-		fVelocity := 0.5,
-		tSettleTime := T#1S);
-		
-	fbStepSizeTest_M3K4rX : FB_MicroStepCountTest := (
-		fStepSize := 0.0013021,
-		nSteps := 1000,
-		fMicroStep := 0.0013021,
-		fVelocity := 10,
-		tSettleTime := T#1S);
-	
+	//M2K4 stats
 	fbM1Stats : FB_MotionStageStats;
 	fbM2Stats : FB_MotionStageStats;
 	fbM3Stats : FB_MotionStageStats;
-	
+	//M3K4 stats
 	fbM4Stats : FB_MotionStageStats;
 	fbM5Stats : FB_MotionStageStats;
 	fbM6Stats : FB_MotionStageStats;
-	
+	//M2K4 BEND stats
 	fbM7Stats : FB_MotionStageStats;
 	fbM8Stats : FB_MotionStageStats;
-
+	//M3K4 BEND stats
 	fbM9Stats : FB_MotionStageStats;	
 	fbM10Stats : FB_MotionStageStats;
 	
+	//Emergency Stop
 	bSTOEnable1 AT %I* : BOOL;
 	bSTOEnable2 AT %I* : BOOL;
 	
@@ -114,85 +107,50 @@ VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[
-M1.nEnableMode := ALWAYS;
-M2.nEnableMode := ALWAYS;
-M3.nEnableMode := ALWAYS;
-
-M4.nEnableMode := ALWAYS;
-M5.nEnableMode := ALWAYS;
-M6.nEnableMode := ALWAYS;
-
-M7.nEnableMode := ALWAYS;
-M8.nEnableMode := ALWAYS;
-
-M9.nEnableMode := ALWAYS;
-M10.nEnableMode := ALWAYS;
-
-M1.bPowerSelf := TRUE;
-M2.bPowerSelf := TRUE;
-M3.bPowerSelf := TRUE;
-
-M4.bPowerSelf := TRUE;
-M5.bPowerSelf := TRUE;
-M6.bPowerSelf := TRUE;
-
-M7.bPowerSelf := FALSE;
-M8.bPowerSelf := FALSE;
-
-M9.bPowerSelf := FALSE;
-M10.bPowerSelf := FALSE;
-
+      <ST><![CDATA[//M2K4
 M1.bHardwareEnable := bSTOEnable1 AND bSTOEnable2;
 M2.bHardwareEnable := bSTOEnable1 AND bSTOEnable2;
 M3.bHardwareEnable := bSTOEnable1 AND bSTOEnable2;
-
+//M3K4
 M4.bHardwareEnable := bSTOEnable1 AND bSTOEnable2;
 M5.bHardwareEnable := bSTOEnable1 AND bSTOEnable2;
 M6.bHardwareEnable := bSTOEnable1 AND bSTOEnable2;
-
+//M2K4 BEND
 M7.bHardwareEnable := bSTOEnable1 AND bSTOEnable2;
 M8.bHardwareEnable := bSTOEnable1 AND bSTOEnable2;
-
+//M3K4 BEND
 M9.bHardwareEnable := bSTOEnable1 AND bSTOEnable2;
 M10.bHardwareEnable := bSTOEnable1 AND bSTOEnable2;
 
-
+//M2K4
 fbMotionStageM1(stMotionStage:=M1);
 fbMotionStageM2(stMotionStage:=M2);
 fbMotionStageM3(stMotionStage:=M3);
-
+//M3K4
 fbMotionStageM4(stMotionStage:=M4);
 fbMotionStageM5(stMotionStage:=M5);
 fbMotionStageM6(stMotionStage:=M6);
-
+//M2K4 BEND
 fbMotionStageM7(stMotionStage:=M7);
 fbMotionStageM8(stMotionStage:=M8);
-
+//M3K4 BEND
 fbMotionStageM9(stMotionStage:=M9);
 fbMotionStageM10(stMotionStage:=M10);
 
+//M2K4
 fbM1Stats(Axis:=M1);
 fbM2Stats(Axis:=M2);
 fbM3Stats(Axis:=M3);
-
+//M3K4
 fbM4Stats(Axis:=M4);
 fbM5Stats(Axis:=M5);
 fbM6Stats(Axis:=M6);
-
+//M2K4 BEND
 fbM7Stats(Axis:=M7);
 fbM8Stats(Axis:=M8);
-
+//M3K4 BEND
 fbM9Stats(Axis:=M9);
-fbM10Stats(Axis:=M10);
-
-fbStepSizeTest_M2K4X(Axis:=M1.Axis);
-fbStepSizeTest_M2K4Y(Axis:=M2.Axis);
-fbStepSizeTest_M2K4rY(Axis:=M3.Axis);
-
-fbStepSizeTest_M3K4X(Axis:=M4.Axis);
-fbStepSizeTest_M3K4Y(Axis:=M5.Axis);
-fbStepSizeTest_M3K4rX(Axis:=M6.Axis);]]></ST>
+fbM10Stats(Axis:=M10);]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>
