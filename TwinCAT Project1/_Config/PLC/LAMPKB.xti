@@ -3668,7 +3668,7 @@ External Setpoint Generation:
 					<Comment>
 						<![CDATA[ Any time BPTM applies a new BP request which is confirmed]]>
 					</Comment>
-					<Type>ULINT</Type>
+					<Type>UDINT</Type>
 					<InOut>7</InOut>
 				</Var>
 				<Var>
@@ -3676,7 +3676,7 @@ External Setpoint Generation:
 					<Comment>
 						<![CDATA[ Any time a FF occurs]]>
 					</Comment>
-					<Type>ULINT</Type>
+					<Type>UDINT</Type>
 					<InOut>7</InOut>
 				</Var>
 			</Vars>
@@ -3687,43 +3687,43 @@ External Setpoint Generation:
 	</Project>
 	<Mappings>
 		<OwnerA Name="LAMPKB Instance">
-			<OwnerB Name="TIID^Device 2 (EtherCAT)^Term 1 (EK1100)^M2K4 BEND DS">
+			<OwnerB Name="TIID^Device 2 (EtherCAT)^Term 1 (EK1100)^MR2K4 BEND DS">
 				<Link VarA="PlcTask Inputs^MAIN.M8.bLimitBackwardEnable" VarB="STM Status^Status^Digital input 2" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^MAIN.M8.bLimitForwardEnable" VarB="STM Status^Status^Digital input 1" AutoLink="true"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 2 (EtherCAT)^Term 1 (EK1100)^M2K4 BEND US">
+			<OwnerB Name="TIID^Device 2 (EtherCAT)^Term 1 (EK1100)^MR2K4 BEND US">
 				<Link VarA="PlcTask Inputs^MAIN.M7.bLimitBackwardEnable" VarB="STM Status^Status^Digital input 2" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^MAIN.M7.bLimitForwardEnable" VarB="STM Status^Status^Digital input 1" AutoLink="true"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 2 (EtherCAT)^Term 1 (EK1100)^M2K4 X">
+			<OwnerB Name="TIID^Device 2 (EtherCAT)^Term 1 (EK1100)^MR2K4 X">
 				<Link VarA="PlcTask Inputs^MAIN.M1.bLimitBackwardEnable" VarB="STM Status^Status^Digital input 2" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^MAIN.M1.bLimitForwardEnable" VarB="STM Status^Status^Digital input 1" AutoLink="true"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 2 (EtherCAT)^Term 1 (EK1100)^M2K4 Y">
+			<OwnerB Name="TIID^Device 2 (EtherCAT)^Term 1 (EK1100)^MR2K4 Y">
 				<Link VarA="PlcTask Inputs^MAIN.M2.bLimitBackwardEnable" VarB="STM Status^Status^Digital input 2" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^MAIN.M2.bLimitForwardEnable" VarB="STM Status^Status^Digital input 1" AutoLink="true"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 2 (EtherCAT)^Term 1 (EK1100)^M2K4 rY">
+			<OwnerB Name="TIID^Device 2 (EtherCAT)^Term 1 (EK1100)^MR2K4 rY">
 				<Link VarA="PlcTask Inputs^MAIN.M3.bLimitBackwardEnable" VarB="STM Status^Status^Digital input 2" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^MAIN.M3.bLimitForwardEnable" VarB="STM Status^Status^Digital input 1" AutoLink="true"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 2 (EtherCAT)^Term 1 (EK1100)^M3K4 BEND DS">
+			<OwnerB Name="TIID^Device 2 (EtherCAT)^Term 1 (EK1100)^MR3K4 BEND DS">
 				<Link VarA="PlcTask Inputs^MAIN.M10.bLimitBackwardEnable" VarB="STM Status^Status^Digital input 2" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^MAIN.M10.bLimitForwardEnable" VarB="STM Status^Status^Digital input 1" AutoLink="true"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 2 (EtherCAT)^Term 1 (EK1100)^M3K4 BEND US">
+			<OwnerB Name="TIID^Device 2 (EtherCAT)^Term 1 (EK1100)^MR3K4 BEND US">
 				<Link VarA="PlcTask Inputs^MAIN.M9.bLimitBackwardEnable" VarB="STM Status^Status^Digital input 2" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^MAIN.M9.bLimitForwardEnable" VarB="STM Status^Status^Digital input 1" AutoLink="true"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 2 (EtherCAT)^Term 1 (EK1100)^M3K4 X">
+			<OwnerB Name="TIID^Device 2 (EtherCAT)^Term 1 (EK1100)^MR3K4 X">
 				<Link VarA="PlcTask Inputs^MAIN.M4.bLimitBackwardEnable" VarB="STM Status^Status^Digital input 2" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^MAIN.M4.bLimitForwardEnable" VarB="STM Status^Status^Digital input 1" AutoLink="true"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 2 (EtherCAT)^Term 1 (EK1100)^M3K4 Y">
+			<OwnerB Name="TIID^Device 2 (EtherCAT)^Term 1 (EK1100)^MR3K4 Y">
 				<Link VarA="PlcTask Inputs^MAIN.M5.bLimitBackwardEnable" VarB="STM Status^Status^Digital input 2" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^MAIN.M5.bLimitForwardEnable" VarB="STM Status^Status^Digital input 1" AutoLink="true"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 2 (EtherCAT)^Term 1 (EK1100)^M3K4 rX">
+			<OwnerB Name="TIID^Device 2 (EtherCAT)^Term 1 (EK1100)^MR3K4 rX">
 				<Link VarA="PlcTask Inputs^MAIN.M6.bLimitBackwardEnable" VarB="STM Status^Status^Digital input 2" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^MAIN.M6.bLimitForwardEnable" VarB="STM Status^Status^Digital input 1" AutoLink="true"/>
 			</OwnerB>
@@ -3731,43 +3731,43 @@ External Setpoint Generation:
 				<Link VarA="PlcTask Inputs^MAIN.bSTOEnable1" VarB="Channel 1^Input"/>
 				<Link VarA="PlcTask Inputs^MAIN.bSTOEnable2" VarB="Channel 2^Input"/>
 			</OwnerB>
-			<OwnerB Name="TINC^NC-Task 1 SAF^Axes^M2K4 BEND DS">
+			<OwnerB Name="TINC^NC-Task 1 SAF^Axes^MR2K4 BEND DS">
 				<Link VarA="PlcTask Inputs^MAIN.M8.Axis.NcToPlc" VarB="Outputs^ToPlc"/>
 				<Link VarA="PlcTask Outputs^MAIN.M8.Axis.PlcToNc" VarB="Inputs^FromPlc"/>
 			</OwnerB>
-			<OwnerB Name="TINC^NC-Task 1 SAF^Axes^M2K4 BEND US">
+			<OwnerB Name="TINC^NC-Task 1 SAF^Axes^MR2K4 BEND US">
 				<Link VarA="PlcTask Inputs^MAIN.M7.Axis.NcToPlc" VarB="Outputs^ToPlc"/>
 				<Link VarA="PlcTask Outputs^MAIN.M7.Axis.PlcToNc" VarB="Inputs^FromPlc"/>
 			</OwnerB>
-			<OwnerB Name="TINC^NC-Task 1 SAF^Axes^M2K4 X">
+			<OwnerB Name="TINC^NC-Task 1 SAF^Axes^MR2K4 X">
 				<Link VarA="PlcTask Inputs^MAIN.M1.Axis.NcToPlc" VarB="Outputs^ToPlc"/>
 				<Link VarA="PlcTask Outputs^MAIN.M1.Axis.PlcToNc" VarB="Inputs^FromPlc"/>
 			</OwnerB>
-			<OwnerB Name="TINC^NC-Task 1 SAF^Axes^M2K4 Y">
+			<OwnerB Name="TINC^NC-Task 1 SAF^Axes^MR2K4 Y">
 				<Link VarA="PlcTask Inputs^MAIN.M2.Axis.NcToPlc" VarB="Outputs^ToPlc"/>
 				<Link VarA="PlcTask Outputs^MAIN.M2.Axis.PlcToNc" VarB="Inputs^FromPlc"/>
 			</OwnerB>
-			<OwnerB Name="TINC^NC-Task 1 SAF^Axes^M2K4 rY">
+			<OwnerB Name="TINC^NC-Task 1 SAF^Axes^MR2K4 rY">
 				<Link VarA="PlcTask Inputs^MAIN.M3.Axis.NcToPlc" VarB="Outputs^ToPlc"/>
 				<Link VarA="PlcTask Outputs^MAIN.M3.Axis.PlcToNc" VarB="Inputs^FromPlc"/>
 			</OwnerB>
-			<OwnerB Name="TINC^NC-Task 1 SAF^Axes^M3K4 BEND DS">
+			<OwnerB Name="TINC^NC-Task 1 SAF^Axes^MR3K4 BEND DS">
 				<Link VarA="PlcTask Inputs^MAIN.M10.Axis.NcToPlc" VarB="Outputs^ToPlc"/>
 				<Link VarA="PlcTask Outputs^MAIN.M10.Axis.PlcToNc" VarB="Inputs^FromPlc"/>
 			</OwnerB>
-			<OwnerB Name="TINC^NC-Task 1 SAF^Axes^M3K4 BEND US">
+			<OwnerB Name="TINC^NC-Task 1 SAF^Axes^MR3K4 BEND US">
 				<Link VarA="PlcTask Inputs^MAIN.M9.Axis.NcToPlc" VarB="Outputs^ToPlc"/>
 				<Link VarA="PlcTask Outputs^MAIN.M9.Axis.PlcToNc" VarB="Inputs^FromPlc"/>
 			</OwnerB>
-			<OwnerB Name="TINC^NC-Task 1 SAF^Axes^M3K4 X">
+			<OwnerB Name="TINC^NC-Task 1 SAF^Axes^MR3K4 X">
 				<Link VarA="PlcTask Inputs^MAIN.M4.Axis.NcToPlc" VarB="Outputs^ToPlc"/>
 				<Link VarA="PlcTask Outputs^MAIN.M4.Axis.PlcToNc" VarB="Inputs^FromPlc"/>
 			</OwnerB>
-			<OwnerB Name="TINC^NC-Task 1 SAF^Axes^M3K4 Y">
+			<OwnerB Name="TINC^NC-Task 1 SAF^Axes^MR3K4 Y">
 				<Link VarA="PlcTask Inputs^MAIN.M5.Axis.NcToPlc" VarB="Outputs^ToPlc"/>
 				<Link VarA="PlcTask Outputs^MAIN.M5.Axis.PlcToNc" VarB="Inputs^FromPlc"/>
 			</OwnerB>
-			<OwnerB Name="TINC^NC-Task 1 SAF^Axes^M3K4 rX">
+			<OwnerB Name="TINC^NC-Task 1 SAF^Axes^MR3K4 rX">
 				<Link VarA="PlcTask Inputs^MAIN.M6.Axis.NcToPlc" VarB="Outputs^ToPlc"/>
 				<Link VarA="PlcTask Outputs^MAIN.M6.Axis.PlcToNc" VarB="Inputs^FromPlc"/>
 			</OwnerB>

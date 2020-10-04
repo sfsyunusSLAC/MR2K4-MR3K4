@@ -25,20 +25,20 @@
 				<SvbTask Priority="8" CycleTime="100000" AmsPort="511">
 					<Name>NC-Task 1 SVB</Name>
 				</SvbTask>
-				<AxisFolder Name="M2K4"/>
-				<AxisFolder Name="M3K4"/>
-				<AxisFolder Name="M2K4 BEND"/>
-				<AxisFolder Name="M3K4 BEND"/>
-				<Axis File="M2K4 X.xti" Id="1"/>
-				<Axis File="M2K4 Y.xti" Id="2"/>
-				<Axis File="M2K4 rY.xti" Id="3"/>
-				<Axis File="M3K4 X.xti" Id="4"/>
-				<Axis File="M3K4 Y.xti" Id="5"/>
-				<Axis File="M3K4 rX.xti" Id="6"/>
-				<Axis File="M2K4 BEND US.xti" Id="14"/>
-				<Axis File="M2K4 BEND DS.xti" Id="15"/>
-				<Axis File="M3K4 BEND US.xti" Id="16"/>
-				<Axis File="M3K4 BEND DS.xti" Id="17"/>
+				<AxisFolder Name="MR2K4"/>
+				<AxisFolder Name="MR3K4"/>
+				<AxisFolder Name="MR2K4 BEND"/>
+				<AxisFolder Name="MR3K4 BEND"/>
+				<Axis File="MR2K4 X.xti" Id="1"/>
+				<Axis File="MR2K4 Y.xti" Id="2"/>
+				<Axis File="MR2K4 rY.xti" Id="3"/>
+				<Axis File="MR3K4 X.xti" Id="4"/>
+				<Axis File="MR3K4 Y.xti" Id="5"/>
+				<Axis File="MR3K4 rX.xti" Id="6"/>
+				<Axis File="MR2K4 BEND US.xti" Id="14"/>
+				<Axis File="MR2K4 BEND DS.xti" Id="15"/>
+				<Axis File="MR3K4 BEND US.xti" Id="16"/>
+				<Axis File="MR3K4 BEND DS.xti" Id="17"/>
 			</NC>
 		</Motion>
 		<Plc>
